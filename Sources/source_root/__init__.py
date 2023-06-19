@@ -10,6 +10,7 @@ log_file = open(f"logs/{log_name}.txt", 'w+')
 sys.stdout = log_file
 sys.stderr = log_file
 print("Python", sys.version)
+print("\nWorking Directory:", os.getcwd())
 print("\nPATH {")
 for l in sys.path:
     print("    "+l)
@@ -42,3 +43,10 @@ def run_static_server(port: int = 8084):
     import static_server
     static_server.run(port)
     return "Server Terminated"
+
+
+def run_flask(port: int = 8084):
+    from flask_app import FlaskApp
+    flaskapp = FlaskApp(port=port-1, static_port=port, log_file=log_name+".txt")
+    flaskapp.run_app()
+    return "Flask Server Thread is Terminated."
