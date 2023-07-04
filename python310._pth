@@ -1,0 +1,11 @@
+.
+./Sources
+./EmbeddedPython
+./EmbeddedPython/DLLs
+./EmbeddedPython/share
+./EmbeddedPython/Scripts
+./EmbeddedPython/Lib/python310.zip
+./EmbeddedPython/Lib/site-packages.zip
+
+# Uncomment to run site.main() automatically
+import site
