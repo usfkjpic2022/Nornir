@@ -1,12 +1,17 @@
 <!DOCTYPE HTML>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Starboard Notebook</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-  <script defer src="starboard-notebook_mirror.js"></script>
-  <link href="starboard-notebook.css" rel="stylesheet">
- </head>
- <body></body>
+	<head>
+		<meta charset="utf-8">
+		<title>Starboard Notebook</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="data:image/png;base64,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"/>
+		<script defer src="starboard-notebook_mirror.js"></script>
+		<link href="starboard-notebook_mirror.css" rel="stylesheet">
+	</head>
+	<body>
+		<script>
+			window.initialNotebookContent = (typeof parent === "undefined") ? `# %%--- [python]\n# properties:\n#   run_on_load: true\n# ---%%\nprint("Hello World!")` : parent.getSourceCodes();
+			window.starboardArtifactsUrl = `./`;
+		</script>
+	</body>
 </html>
