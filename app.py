@@ -11,6 +11,6 @@ class CachingRequestHandler(SimpleHTTPRequestHandler):
 if __name__ == '__main__':
     from http.server import HTTPServer
 
-    server_address = ("", 80)  # 원하는 포트 번호로 변경
+    server_address = ("", 8000)  # 원하는 포트 번호로 변경
     httpd = HTTPServer(server_address, CachingRequestHandler)
     httpd.serve_forever()
